@@ -56,7 +56,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          Final year B.Tech student at Vellore Institute of Technology, Chennai
+          Final year B.Tech CSE student at Vellore Institute of Technology,
+          Chennai
         </p>
         <a href={Resume} download>
           <button className="hover">Resume</button>
