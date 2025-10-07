@@ -1,0 +1,13 @@
+## Netlify configuration to select a modern build image and Vite build settings
+## This forces Netlify to use the Ubuntu 22.04 build image (supported until at least 2028)
+[build]
+  # Use a current Netlify build image to avoid the deprecation warning
+  image = "ubuntu-22-04"
+
+  # Vite default build command and publish directory
+  command = "npm run build"
+  publish = "dist"
+
+# Optional: ensure environment for production builds (uncomment if you need them)
+# [context.production.environment]
+#   NODE_OPTIONS = "--max_old_space_size=4096"
